@@ -1,0 +1,18 @@
+<projectRoot>
+	<!-- 项目名称 -->
+	<projectName>hssp</projectName>
+	<!-- 项目路径 -->
+	<documentRoot>G:\tools\apache\htdocs\test</documentRoot>
+	<!-- 项目类型 1文章采集 2图片采集 -->
+	<projectType>1</projectType>
+	<soureUrl>
+		<url>
+			<indexStart>"http://news.sifanghua.cn/qinyou/list_215_{1}.html"</indexStart>
+			<indexend>"http://news.sifanghua.cn/qinyou/list_215_{3}.html"</indexend>
+			<!-- 采集地址正则 -->
+			<indexRex>http://.*/qinyou/\w+\.html</indexRex>
+			<!-- 采集内容正则 -->
+			<conRex>&lt;div class=\"bodycss\"&gt;.+&lt;/div&gt;.*&lt;div class=\"actbox\"&gt;</conRex>
+		</url>
+	</soureUrl>
+</projectRoot>
